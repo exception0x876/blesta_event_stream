@@ -34,7 +34,8 @@ class EventStreamPlugin extends Plugin
         }
 
         $this->Companies->setSetting($plugin->company_id, 'event_stream.endpoint', '', true);
-        $this->Companies->setSetting($plugin->company_id, 'event_stream.public_key', '', true);
+        $this->Companies->setSetting($plugin->company_id, 'event_stream.private_key', '', true);
+        $this->Companies->setSetting($plugin->company_id, 'event_stream.allow_origin', '', true);
     }
 
     /**
@@ -55,7 +56,8 @@ class EventStreamPlugin extends Plugin
         }
 
         $this->Companies->unsetSetting($plugin->company_id, 'event_stream.endpoint');
-        $this->Companies->unsetSetting($plugin->company_id, 'event_stream.public_key');
+        $this->Companies->unsetSetting($plugin->company_id, 'event_stream.private_key');
+        $this->Companies->unsetSetting($plugin->company_id, 'event_stream.allow_origin');
     }
 
     public function getEvents()
