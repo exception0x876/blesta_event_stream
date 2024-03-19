@@ -11,6 +11,7 @@ class ClientMain extends AppController
         $user_data = json_encode([
             'client_id' => $this->Session->read('blesta_client_id'),
             'staff_id' => $this->Session->read('blesta_staff_id'),
+            'time' => time(),
         ]);
         $headers = ['Content-Type: application/json'];
         if (!empty($allow_origin->value)) {
