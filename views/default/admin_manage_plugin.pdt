@@ -11,12 +11,12 @@
                         <?php $this->Form->fieldText('endpoint', (isset($vars->endpoint) ? $vars->endpoint : null));?>
                     </li>
                     <li>
-                        <?php $this->Form->label($this->_('EventStreamManagePlugin.index.field_private_key', true));?>
-                        <?php $this->Form->fieldTextArea('private_key', (isset($vars->private_key) ? $vars->private_key : null));?>
+                        <?php $this->Form->label($this->_('EventStreamManagePlugin.index.field_allow_origin', true));?>
+                        <?php $this->Form->fieldText('allow_origin', (isset($vars->allow_origin) ? $vars->allow_origin : null));?>
                     </li>
                     <li>
-                        <?php $this->Form->label($this->_('EventStreamManagePlugin.index.field_allow_origin', true));?>
-                        <?php $this->Form->fieldTextArea('allow_origin', (isset($vars->allow_origin) ? $vars->allow_origin : null));?>
+                        <?php $this->Form->label($this->_('EventStreamManagePlugin.index.field_private_key', true));?>
+                        <?php $this->Form->fieldTextArea('private_key', (isset($vars->private_key) ? $vars->private_key : null));?>
                     </li>
                 </ul>
             </div>
